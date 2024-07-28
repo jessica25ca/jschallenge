@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tutoriel.css">
+    <title>Mes challenges</title>
+</head>
+<body>
+    <main class="main-container">
+        <section class="parts">
+            <h2>Challenge 1 : Your age in days</h2>
+            <hr>
+            <div class="flex-box">
+                <button class="btn btn-primary" id="click" onclick="AgeInDays()">Click Me</button>
+                <button class="btn btn-secondary" id="reset" onclick="reset()">Reset</button>
+            </div>    
+            <div id="result" class="result">
+           </div>
+        </section>
+
+        <section class="parts">
+            <h2>Challenge 2 : Cat generator</h2>
+            <hr>
+            <button class="btn btn-central" id="cat-generator" onclick="generatecat()">Generate a cat</button>
+            <div class="flex-box-2" id="flex-box-2">
+               
+            </div>     
+           </div>
+        </section>
+        <section class="parts">
+            <h2>Challenge 3 : Pierre,papier,ciseau</h2>
+            <hr>
+            <div class="flex-box-3" id="flex-box-3">
+                <img  id="pierre" src="../img/pierre.jpg" alt="" onclick="rpsGame(this)">
+                <img id="papier" src="../img/papier.jpg" alt="" onclick="rpsGame(this)">
+                <img  id="ciseau" src="../img/ciseau.jpg" alt="" onclick="rpsGame(this)">
+            </div>
+        </section>
+        <section class="parts">
+            <h2>Challenge 4 : Changer les couleurs de bouton</h2>
+            <hr>
+            <div class="flex-box-4" id="flex-box-4">
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Rouge</option>
+                        <option value="yellow">Jaune</option>
+                        <option value="reset">Reset</option> 
+                    </select>
+                </form>
+                <button type="button" class="btn btn-primary">Jessica</button>
+                <button type="button" class="btn btn-secondary">Sonia</button>
+                <button type="button" class="btn btn-warning">Martin</button>
+                <button type="button" class="btn btn-succes">Léa</button>
+
+            </div>
+        </section>
+        <section class="parts">
+            <h2>Challenge 5 : Jeu de cartes</h2>
+            <h3><span id="result">C'est parti!</span></h3>
+            <hr>
+            <div class="flex-black-row1">
+                <div id="moi">
+                    <h2>Mon score: <span id="monresultat">0</span></h2>
+                </div>
+                <div id="adversaire">
+                    <h2>Adversaire score: <span id="sonresultat">0</span></h2>
+                </div>
+            </div>
+            <div class="flex-black-row2">
+                <div>
+                    <button type="button" class="btn btn-primary" id="blackjack-hit">Jessica</button>
+                    <button type="button" class="btn btn-secondary" id="blackjack-stand">Machine</button>
+                    <button type="button" class="btn btn-warning" id="blackjack-deal">Nouvelle</button>
+                </div>
+            </div>
+            <div class="flex-black-row3">
+                <table style="border: 1px solid black;">
+                    <tr>
+                        <th style="border-right: 1px solid black;">Gagnés</th>
+                        <th style="border-right: 1px solid black;">Perdues</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td style="border-top: 1px solid black;border-right: 1px solid black;">0</td>
+                        <td style="border-top: 1px solid black;border-right: 1px solid black;">0</td>
+                        <td  style="border-top: 1px solid black;">0</td>
+                    </tr>
+                </table>
+            </div>
+
+            
+        </section>
+        
+
+    </main>
+   <script src="../js/tutoriel.js"></script>
+</body>
+</html>
